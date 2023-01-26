@@ -45,7 +45,7 @@ export default function Contact() {
                     <span>Jl. Desa Sumberrejo</span>
                   </div>
                 </div>
-                <div className="flex gap-7">
+                <div className="flex gap-7 pt-8">
                   <IonIcon icon={logoFacebook} size="large"></IonIcon>
                   <IonIcon icon={logoInstagram} size="large"></IonIcon>
                   <IonIcon icon={logoYoutube} size="large"></IonIcon>

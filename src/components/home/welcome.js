@@ -7,7 +7,7 @@ import moveTo from "../moveTo";
 export default function Welcome() {
   return (
     <section className="pt-[9vh] px-4 min-h-screen bg-gradient-to-br from-white to-warna3 lg:px-8 ">
-      <div class="flex gap-5 lg:gap-10 items-center pt-8 flex-col lg:flex-row lg:pt-12  ">
+      <div class="flex gap-5 lg:gap-10 items-center pt-8 flex-col lg:flex-row lg:pt-12 pl-5 ">
         <div className="w-full bg-transparent border lg:w-1/2 order-1 lg:order-2">
           <img src={img2} alt="Hero" className="w-full h-[250px] lg:h-[350px] object-cover rounded-lg shadow-2xl" />
         </div>
