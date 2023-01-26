@@ -14,9 +14,7 @@ export default function Card({ image, name, By }) {
         <h2 class="font-bold text-lg mb-2">{name}</h2>
         <p class="text-sm text-gra">Deskripsi Singkat tentang tanaman</p>
         <div className="mt-1">
-          <a href="#" class="bg-teal-500 text-white p-2 rounded-lg inline-block">
-            Learn More
-          </a>
+          <button class="bg-teal-500 text-white p-2 rounded-lg inline-block">Learn More</button>
         </div>
       </div>
     </div>
