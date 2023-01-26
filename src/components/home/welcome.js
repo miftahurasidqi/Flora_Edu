@@ -1,7 +1,7 @@
-import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
+// import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
 import img2 from "../../images/josua-natanael-AIoaTWtswkg-unsplash.jpg";
-import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
-import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
+// import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
+// import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
 import moveTo from "../moveTo";
 
 export default function Welcome() {
