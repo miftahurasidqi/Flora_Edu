@@ -11,7 +11,7 @@ import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
 export default function Colections() {
   const Nav = [
     { name: "Beranda", link: "/", on: false },
-    { name: "Tentang Kami", link: "/tetangkami", on: false },
+    { name: "Tentang Kami", link: "/aboutus", on: false },
     { name: "Koleksi", link: "/colections", on: true },
     { name: "Contact", link: "/contact", on: false },
   ];
@@ -39,11 +39,11 @@ export default function Colections() {
     <div>
       <Navbar navList={Nav} />
       <main className="w-full">
-        <section class="bg-gray-100 w-full pt-[9vh] min-h-screen  justify-center items-center lg:px-20 pb-7">
-          <div className="p-2 pl-6 mb-5">
-            <h2 className="text-xl lg:text-3xl">Daftar Jenis Flora</h2>
-          </div>
+        <section className="bg-gray-100 w-full pt-[9vh] min-h-screen justify-center items-center lg:px-20 pb-7">
           <div className="flex flex-wrap justify-center items-center gap-4 px-4">
+            <div className="w-full p-2 pl-6 mb-5">
+              <h2 className="text-xl lg:text-3xl">Daftar Jenis Flora</h2>
+            </div>
             <Card image={img1} name="Tanaman 1" By={descImg.image1} />
             <Card image={img2} name="Tanaman 2" By={descImg.image2} />
             <Card image={img3} name="Tanaman 3" By={descImg.image3} />

@@ -2,14 +2,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./components/home";
 import Colections from "./components/colections";
-import TentangKami from "./components/tentangKami";
+import AboutUs from "./components/aboutus";
 import Contact from "./components/contact";
 
 import Login from "./components/login";
-import Admin from "./components/admin";
-import Dashboard from "./components/dashboard";
-import Tanaman from "./components/tanaman";
-import Profile from "./components/profile";
+// import Admin from "./components/admin";
+import Tanaman from "./components/dashboard/tanaman";
+import TamabahTanaman from "./components/dashboard/tambahTanaman";
+import Admin from "./components/dashboard/admin";
+import TambahAdmin from "./components/dashboard/tambahAdmin";
+import Profile from "./components/dashboard/profile";
+import Pesan from "./components/dashboard/pesan";
+
+// import Tanaman from "./components/tanaman";
 
 function App() {
   return (
@@ -18,15 +23,17 @@ function App() {
         {/* public routes */}
         <Route path="/" element={<Home />} />
         <Route path="/colections" element={<Colections />} />
-        <Route path="/tetangkami" element={<TentangKami />} />
+        <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
 
         {/* admin Only */}
-        <Route path="/login" element={<Login param="1" />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/tanaman" element={<Tanaman />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/pesan" element={<Pesan />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/tambahtanaman" element={<TamabahTanaman />} />
+        <Route path="/tambahadmin" element={<TambahAdmin />} />
 
         {/* not found */}
         <Route path="*" element={<Home />} />

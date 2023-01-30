@@ -10,7 +10,7 @@ import { call, mail, location, logoFacebook, logoInstagram, logoYoutube } from "
 export default function Contact() {
   const Nav = [
     { name: "Beranda", link: "/", on: false },
-    { name: "Tentang Kami", link: "/tetangkami", on: false },
+    { name: "Tentang Kami", link: "/aboutus", on: false },
     { name: "Koleksi", link: "/colections", on: false },
     { name: "Contact", link: "/contact", on: true },
   ];

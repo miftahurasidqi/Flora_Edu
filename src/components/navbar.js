@@ -1,5 +1,6 @@
 // import { Transition } from "@headlessui/react";
 import { useState } from "react";
+
 import moveTo from "./moveTo";
 
 function Navbar({ navList }) {
@@ -10,7 +11,7 @@ function Navbar({ navList }) {
       <div class="container mx-auto flex items-center justify-between px-4 py-3 relative">
         <div class="flex items-center">
           {/* <img src="https://images.unsplash.com/photo-1659851854011-30f7e9893289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" alt="Logo" class="h-8" /> */}
-          <h1 class="ml-2 text-lg font-semibold text-gray-800">
+          <h1 class="ml-2 text-lg lg:text-xl font-semibold text-gray-800">
             Flora<span className="text-teal-500">Edu</span>
           </h1>
         </div>

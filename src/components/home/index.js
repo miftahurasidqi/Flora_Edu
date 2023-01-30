@@ -10,7 +10,7 @@ import Footer from "../footer";
 export default function Home() {
   const Nav = [
     { name: "Beranda", link: "/", on: true },
-    { name: "Tentang Kami", link: "/tetangkami", on: false },
+    { name: "Tentang Kami", link: "/aboutus", on: false },
     { name: "Koleksi", link: "/colections", on: false },
     { name: "Contact", link: "/contact", on: false },
   ];
