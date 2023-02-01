@@ -14,6 +14,7 @@ import TambahAdmin from "./components/dashboard/tambahAdmin";
 import Profile from "./components/dashboard/profile";
 import Pesan from "./components/dashboard/pesan";
 import TanamanDetail from "./components/dashboard/tanamanDetail";
+import ColectionDetail from "./components/colections/colectionDetail";
 
 // import Tanaman from "./components/tanaman";
 
@@ -24,6 +25,7 @@ function App() {
         {/* public routes */}
         <Route path="/" element={<Home />} />
         <Route path="colections" element={<Colections />} />
+        <Route path="colections/:tanamanId" element={<ColectionDetail />} />
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
 
