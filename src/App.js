@@ -25,7 +25,7 @@ function App() {
         {/* public routes */}
         <Route path="/" element={<Home />} />
         <Route path="colections" element={<Colections />} />
-        <Route path="colections/:tanamanId" element={<ColectionDetail />} />
+        {/* <Route path="colections/:tanamanId" element={<ColectionDetail />} /> */}
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
 
