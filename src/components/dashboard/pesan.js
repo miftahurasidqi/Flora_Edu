@@ -1,15 +1,7 @@
-import Navbar from "../navbar";
-import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
-import img2 from "../../images/josua-natanael-AIoaTWtswkg-unsplash.jpg";
-import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
-import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
-
 import NavAdmin from "../navAdmin";
-
+import profil from "../../images/profile.png";
 import { IonIcon } from "@ionic/react";
-import { add } from "ionicons/icons";
-import ListTanaman from "../listTanaman";
-// import { LiHTMLAttributes } from "react";
+import { trash } from "ionicons/icons";
 
 export default function Pesan() {
   const Nav = [
@@ -19,33 +11,77 @@ export default function Pesan() {
     { name: "Profile", link: "/profile", on: false },
   ];
 
-  const tb_tanaman = [
-    { img: img1, nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img2, nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img3, nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img4, nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+  const tb_pesan = [
+    { nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
   ];
+
   return (
     <div>
       <NavAdmin navList={Nav} />
-      <div className="lg:pl-64 w-full pt-[10vh] lg:pt-0 min-h-screen font-sans justify-center items-center p-3 bg-teal-200">
+      <div className="lg:pl-64 w-full pt-[10vh] lg:pt-0 min-h-screen font-sans justify-center items-center p-3">
         <div className="flex-1 pb-8">
           <div className="flex items-center justify-between py-7 px-10">
             <div>
-              <h1 className="text-2xl font-semibold leading-relaxed text-gray-800">Daftar Tanaman</h1>
+              <h1 className="text-2xl font-semibold leading-relaxed text-gray-800">Daftar Pesan</h1>
             </div>
-
-            <button className="inline-flex gap-x-2 items-center py-2.5 px-6 text-white bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-1">
-              <IonIcon icon={add} size="medium"></IonIcon>
-              <span className="text-sm font-semibold tracking-wide">Tamabh Tanaman</span>
-            </button>
           </div>
 
           <div class="w-full border border-gray-200">
-            <ListTanaman list={tb_tanaman[0]} />
-            <ListTanaman list={tb_tanaman[1]} />
-            <ListTanaman list={tb_tanaman[2]} />
-            <ListTanaman list={tb_tanaman[3]} />
+            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
+              <div class="py-1 pl-6">
+                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
+              </div>
+
+              <div class="grow flex flex-col justify-center gap-2">
+                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
+                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
+              </div>
+              <div class="flex items-center mr-6">
+                <IonIcon icon={trash} size="medium"></IonIcon>
+              </div>
+            </div>
+            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
+              <div class="py-1 pl-6">
+                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
+              </div>
+
+              <div class="grow flex flex-col justify-center gap-2">
+                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
+                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
+              </div>
+              <div class="flex items-center mr-6">
+                <IonIcon icon={trash} size="medium"></IonIcon>
+              </div>
+            </div>
+            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
+              <div class="py-1 pl-6">
+                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
+              </div>
+
+              <div class="grow flex flex-col justify-center gap-2">
+                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
+                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
+              </div>
+              <div class="flex items-center mr-6">
+                <IonIcon icon={trash} size="medium"></IonIcon>
+              </div>
+            </div>
+            <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
+              <div class="py-1 pl-6">
+                <img src={profil} alt="" class="w-16 h-16 rounded-full object-cover object-top border border-gray-200" />
+              </div>
+
+              <div class="grow flex flex-col justify-center gap-2">
+                <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{tb_pesan[0].nama}</h1>
+                <p class="font-medium text-gray-700 overflow-hidden">{tb_pesan[0].deskripsi}</p>
+              </div>
+              <div class="flex items-center mr-6">
+                <IonIcon icon={trash} size="medium"></IonIcon>
+              </div>
+            </div>
           </div>
         </div>
       </div>

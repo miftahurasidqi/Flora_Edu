@@ -1,5 +1,6 @@
 import { IonIcon } from "@ionic/react";
 import { create, trash, download } from "ionicons/icons";
+import moveTo from "./moveTo";
 
 import { useState } from "react";
 
@@ -7,14 +8,14 @@ export default function ListTanaman({ list }) {
   const [moreTogel, setMoreTogel] = useState(false);
 
   return (
-    <div class=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-      <div class="py-2 pl-10">
-        <img src={list.img} alt="" class="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200" />
+    <div onClick={() => moveTo(`/tanaman/${list.id}`)} className=" flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
+      <div className="py-2 pl-10">
+        <img src={list.img} alt="" className="w-40 aspect-[3/2] rounded-lg object-cover object-top border border-gray-200" />
       </div>
 
-      <div class="grow flex flex-col justify-center gap-2">
-        <h1 class="text-xl lg:text-3xl font-semibold text-gray-900">{list.nama}</h1>
-        <p class="font-medium text-gray-700 overflow-hidden">{list.deskripsi}</p>
+      <div className="grow flex flex-col justify-center gap-2">
+        <h1 className="text-xl lg:text-3xl font-semibold text-gray-900">{list.nama}</h1>
+        <p className="font-medium text-gray-700 overflow-hidden">{list.deskripsi}</p>
       </div>
       <button className=" relative mr-6">
         <div className="rotate-90" onClick={() => setMoreTogel(!moreTogel)}>

@@ -1,15 +1,11 @@
-import Navbar from "../navbar";
 import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
 import img2 from "../../images/josua-natanael-AIoaTWtswkg-unsplash.jpg";
 import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
 import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
-
 import NavAdmin from "../navAdmin";
-
 import { IonIcon } from "@ionic/react";
 import { add } from "ionicons/icons";
 import ListTanaman from "../listTanaman";
-// import { LiHTMLAttributes } from "react";
 
 export default function Profile() {
   const Nav = [
@@ -28,7 +24,7 @@ export default function Profile() {
   return (
     <div>
       <NavAdmin navList={Nav} />
-      <div className="pl-64 w-full min-h-screen font-sans text-gray-900 bg-gray-50 flex">
+      <div className="pl-64  w-full min-h-screen font-sans text-gray-900 bg-gray-50 flex">
         <div className="flex-1 pb-8">
           <div className="flex items-center justify-between py-7 px-10">
             <div>

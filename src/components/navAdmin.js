@@ -9,7 +9,7 @@ export default function NavAdmin({ navList }) {
   const [hamburgerTogel, setHamburgerTogel] = useState(false);
 
   return (
-    <aside className="py-3 px-10 w-full h-[10vh] lg:w-64 lg:h-full border-r border-gray-200bg-white bg-opacity-50 backdrop-blur-sm shadow-custom fixed">
+    <aside className="py-3 px-10 w-full h-[10vh] lg:w-64 lg:h-full border-r border-gray-200 bg-white bg-opacity-50 backdrop-blur-sm shadow-custom fixed">
       <div class="flex items-center">
         {/* <img src="https://images.unsplash.com/photo-1659851854011-30f7e9893289?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80" alt="Logo" class="h-8" /> */}
         <h1 class="ml-2 lg:mt-3 text-lg lg:text-3xl font-semibold text-gray-800">
@@ -56,7 +56,7 @@ export default function NavAdmin({ navList }) {
           <span className="w-6 h-[2px] my-1 block bg-teal-500"></span>
         </div>
 
-        <div className={`${hamburgerTogel ? "block" : "hidden"} absolute -right-2 mt-2 w-80 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}>
+        <div className={`${hamburgerTogel ? "block" : "hidden"} absolute z-[100] -right-2 mt-2 w-80 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}>
           <button
             onClick={() => moveTo(`${navList[0].link}`)}
             className={`${navList[0].on ? "bg-teal-600 text-white" : "text-gray-900 hover:text-teal-900"} group flex gap-2 w-full items-center rounded-md px-4 py-4 font-semibold text-lg  hover:font-bold hover:shadow-lg shadow-teal-700`}

@@ -21,10 +21,10 @@ export default function Tanaman() {
   ];
 
   const tb_tanaman = [
-    { img: img1, nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img2, nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img3, nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img4, nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 1, img: img1, nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 2, img: img2, nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 3, img: img3, nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
+    { id: 4, img: img4, nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
   ];
   return (
     <div>
@@ -40,7 +40,9 @@ export default function Tanaman() {
               onClick={() => moveTo("/tambahtanaman")}
               className="inline-flex gap-x-2 items-center py-1 px-3 lg:py-2.5 lg:px-6 text-white bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-1"
             >
-              <IonIcon icon={add} size="medium"></IonIcon>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
               <span className="text-xs lg:text-sm font-semibold tracking-wide">Tambah Tanaman</span>
             </button>
           </div>

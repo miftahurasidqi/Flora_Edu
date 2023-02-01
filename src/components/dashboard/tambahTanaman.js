@@ -1,15 +1,8 @@
-import Navbar from "../navbar";
-import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
 import img2 from "../../images/josua-natanael-AIoaTWtswkg-unsplash.jpg";
-import img3 from "../../images/ma-ti-wzeA3sU2hlo-unsplash.jpg";
-import img4 from "../../images/rafiqmia-ihsanuddin-qqbmMh57u5k-unsplash.jpg";
-
 import NavAdmin from "../navAdmin";
 
-import { IonIcon } from "@ionic/react";
-import { add } from "ionicons/icons";
-import ListTanaman from "../listTanaman";
-// import { LiHTMLAttributes } from "react";
+// import { IonIcon } from "@ionic/react";
+// import { add } from "ionicons/icons";
 
 export default function TamabahTanaman() {
   const Nav = [
@@ -19,12 +12,6 @@ export default function TamabahTanaman() {
     { name: "Profile", link: "/profile", on: false },
   ];
 
-  const tb_tanaman = [
-    { img: img1, nama: "tanaman 1", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img2, nama: "tanaman 2", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img3, nama: "tanaman 3", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-    { img: img4, nama: "tanaman 4", deskripsi: "Lorem velit nisi culpa id est cillum sit." },
-  ];
   return (
     <div>
       <NavAdmin navList={Nav} />
@@ -32,20 +19,32 @@ export default function TamabahTanaman() {
         <div className="flex-1 pb-8">
           <div className="flex items-center justify-between py-7 px-10">
             <div>
-              <h1 className="text-2xl font-semibold leading-relaxed text-gray-800">Daftar Tanaman</h1>
+              <h1 className="text-2xl font-semibold leading-relaxed text-gray-800">Tambah Tanaman</h1>
             </div>
-
-            <button className="inline-flex gap-x-2 items-center py-2.5 px-6 text-white bg-teal-600 rounded-xl hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-1">
-              <IonIcon icon={add} size="medium"></IonIcon>
-              <span className="text-sm font-semibold tracking-wide">Tamabh Tanaman</span>
-            </button>
           </div>
+          <div className="flex flex-col p-3 gap-3 lg:gap-7 lg:p-7 lg:flex-row w-full border border-gray-200">
+            <div className="w-full bg-transparent lg:w-2/5 order-1 lg:order-2">
+              <img src={img2} alt="Hero" className="w-full aspect-[3/2] object-cover rounded-lg shadow-2xl" />
+            </div>
+            <div className="w-full p-3 lg:w-3/5 order-2 lg:order-1 border rounded-lg border-gray-400 ">
+              <form action="">
+                <label className="text-gray-900 text-2xl" for="nama">
+                  Nama Tanaman
+                </label>
+                <input className="w-full p-2 bg-transparent text-gray-700 text-2xl outline-gray-400 mb-5" type="text" placeholder="Masukan Nama Tanaman" id="nama" />
 
-          <div class="w-full border border-gray-200">
-            <ListTanaman list={tb_tanaman[0]} />
-            <ListTanaman list={tb_tanaman[1]} />
-            <ListTanaman list={tb_tanaman[2]} />
-            <ListTanaman list={tb_tanaman[3]} />
+                <label className="text-gray-900 text-2xl" for="deskripsi">
+                  Deskripsi
+                </label>
+                <textarea className="w-full h-80 p-2 bg-transparent text-gray-700 text-2xl outline-gray-400 mb-5" type="text" placeholder="Tambahkan Deskripsi Tanaman" id="deskripsi" />
+
+                <div className="flex w-full justify-end">
+                  <button className="bg-teal-400 hover:bg-teal-600 text-gray-700 hover:text-gray-200 rounded-md flex px-5 py-2">
+                    <span className="text-md">Simpan</span>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

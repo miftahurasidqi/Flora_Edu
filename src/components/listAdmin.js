@@ -1,5 +1,5 @@
 import { IonIcon } from "@ionic/react";
-import { create, trash, download } from "ionicons/icons";
+import { create, trash } from "ionicons/icons";
 
 import { useState } from "react";
 
@@ -8,16 +8,16 @@ export default function ListAdmin({ list }) {
 
   return (
     <div className="flex gap-3 hover:bg-gray-100 transition-colors border-y border-gray-200">
-      <div class="py-2 pl-10">
+      <div class="py-2 pl-10 w-8">
         <h1 class="text-xl font-semibold text-gray-900">{list.no}</h1>
-      </div>{" "}
-      <div class="py-2 pl-10">
+      </div>
+      <div class="py-2 pl-10 w-1/4">
         <h1 class="text-xl font-semibold text-gray-900">{list.nama}</h1>
       </div>
-      <div class="w-1/4 py-2 pl-10">
+      <div class="py-2 pl-10 w-1/4">
         <h1 class="text-xl font-semibold text-gray-900">{list.email}</h1>
       </div>
-      <div class="grow py-2 pl-10">
+      <div class="py-2 pl-10 grow">
         <h1 class="text-xl font-semibold text-gray-900">{list.jabatan}</h1>
       </div>
       <button className=" relative mr-6">
