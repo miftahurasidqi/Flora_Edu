@@ -1,6 +1,3 @@
-import img1 from "../../images/alea-film-oU-TSYlvkpY-unsplash.jpg";
-import moveTo from "../moveTo";
-
 import Footer from "../footer";
 import Navbar from "../navbar";
 import Hero from "./hero";

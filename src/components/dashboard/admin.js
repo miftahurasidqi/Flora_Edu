@@ -1,10 +1,6 @@
 import NavAdmin from "../navAdmin";
 import moveTo from "../moveTo";
-import { IonIcon } from "@ionic/react";
-import { add } from "ionicons/icons";
 import ListAdmin from "../listAdmin";
-
-import { useState } from "react";
 
 export default function Admin() {
   const Nav = [
